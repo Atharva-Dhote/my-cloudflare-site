@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Atharva | Cloud Engineer</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+font-family:Poppins,sans-serif;
+
+background:
+linear-gradient(135deg,#090909,#111827,#0f172a,#1e1b4b);
+
+height:100vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+overflow:hidden;
+
+color:white;
+
+}
+
+/* Background Glow */
+
+body::before{
+
+content:"";
+
+position:absolute;
+
+width:800px;
+height:800px;
+
+background:#7c3aed;
+
+border-radius:50%;
+
+filter:blur(180px);
+
+top:-250px;
+left:-250px;
+
+opacity:.35;
+
+animation:move1 10s ease-in-out infinite alternate;
+
+}
+
+body::after{
+
+content:"";
+
+position:absolute;
+
+width:700px;
+height:700px;
+
+background:#06b6d4;
+
+border-radius:50%;
+
+filter:blur(180px);
+
+bottom:-220px;
+right:-220px;
+
+opacity:.25;
+
+animation:move2 12s ease-in-out infinite alternate;
+
+}
+
+@keyframes move1{
+
+to{
+
+transform:translate(150px,120px);
+
+}
+
+}
+
+@keyframes move2{
+
+to{
+
+transform:translate(-150px,-100px);
+
+}
+
+}
+
+/* Floating Stars */
+
+.star{
+
+position:absolute;
+
+width:3px;
+height:3px;
+
+background:white;
+
+border-radius:50%;
+
+animation:float 8s linear infinite;
+
+opacity:.7;
+
+}
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0);
+
+opacity:0;
+
+}
+
+50%{
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(-100vh);
+
+opacity:0;
+
+}
+
+}
+
+/* Card */
+
+.card{
+
+position:relative;
+
+width:900px;
+
+padding:60px;
+
+background:rgba(255,255,255,.06);
+
+backdrop-filter:blur(20px);
+
+border:1px solid rgba(255,255,255,.15);
+
+border-radius:30px;
+
+box-shadow:
+
+0 0 50px rgba(124,58,237,.3),
+
+0 0 100px rgba(6,182,212,.15);
+
+z-index:10;
+
+transition:.4s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:
+
+0 0 60px rgba(124,58,237,.5),
+
+0 0 120px rgba(6,182,212,.25);
+
+}
+
+.tag{
+
+font-size:13px;
+
+letter-spacing:5px;
+
+color:#f472b6;
+
+margin-bottom:15px;
+
+text-transform:uppercase;
+
+}
+
+h1{
+
+font-size:64px;
+
+font-family:Orbitron,sans-serif;
+
+background:linear-gradient(90deg,#ffffff,#67e8f9,#a78bfa);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+margin-bottom:15px;
+
+}
+
+h2{
+
+font-weight:400;
+
+color:#67e8f9;
+
+margin-bottom:30px;
+
+}
+
+p{
+
+font-size:18px;
+
+line-height:1.9;
+
+color:#d1d5db;
+
+margin-bottom:35px;
+
+}
+
+.buttons{
+
+display:flex;
+
+gap:20px;
+
+}
+
+button{
+
+padding:16px 35px;
+
+border:none;
+
+border-radius:12px;
+
+cursor:pointer;
+
+font-size:16px;
+
+font-weight:600;
+
+transition:.35s;
+
+}
+
+.primary{
+
+background:linear-gradient(90deg,#8b5cf6,#06b6d4);
+
+color:white;
+
+}
+
+.secondary{
+
+background:transparent;
+
+border:1px solid #67e8f9;
+
+color:white;
+
+}
+
+button:hover{
+
+transform:translateY(-6px) scale(1.05);
+
+box-shadow:0 0 30px rgba(103,232,249,.4);
+
+}
+
+.jp{
+
+position:absolute;
+
+right:50px;
+
+top:40px;
+
+font-size:14px;
+
+color:#ec4899;
+
+letter-spacing:3px;
+
+}
+
+.footer{
+
+margin-top:35px;
+
+color:#94a3b8;
+
+font-size:14px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<div class="jp">雲 • クラウド • アニメ</div>
+
+<div class="tag">CYBER • CLOUD • DEVELOPER</div>
+
+<h1>Hi, I'm Atharva 👋</h1>
+
+<h2>Cloud Engineer • DevOps Learner • Anime Enthusiast</h2>
+
+<p>
+
+Welcome to my digital universe.
+
+I'm passionate about Cloud Computing, AWS, Google Cloud, Docker, Cloudflare, Automation and building modern web experiences.
+
+This website marks the beginning of my cloud engineering journey.
+
+</p>
+
+<div class="buttons">
+
+<button class="primary">🚀 Explore Projects</button>
+
+<button class="secondary">☁️ Contact Me</button>
+
+</div>
+
+<div class="footer">
+
+「夢をコードに変える。」 — Turning dreams into code.
+
+</div>
+
+</div>
+
+<script>
+
+for(let i=0;i<60;i++){
+
+const star=document.createElement("div");
+
+star.className="star";
+
+star.style.left=Math.random()*100+"vw";
+
+star.style.top=Math.random()*100+"vh";
+
+star.style.animationDuration=5+Math.random()*10+"s";
+
+star.style.animationDelay=Math.random()*5+"s";
+
+document.body.appendChild(star);
+
+}
+
+</script>
+
+</body>
+
+</html>
